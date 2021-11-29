@@ -1,0 +1,37 @@
+body {
+  background-image: url(https://i.imgur.com/8XsyL2m.jpg); background-repeat: no-repeat;
+  background-size: auto; background-attachment: fixed;
+  text-align: center;
+}
+
+table {
+  empty-cells: show;
+  background-color: lavender;
+  align-self: center;
+}
+
+th {
+  background-color: #99cc55;
+}
+
+tr {
+  background-color: #ffddaa;
+}
+
+/* td {
+  background-color: lavender;
+} */
+
+h1 {
+  text-align: center;
+  color: #555533;
+}
+
+.receipt {
+  color: orange;
+}
+
+.radios {
+  text-align: left;
+  display: inline;
+}

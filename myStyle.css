@@ -1,0 +1,32 @@
+
+
+body
+{
+  background-image: url(https://i.imgur.com/Y0NY6bP.jpg); background-size: 80%;
+  background-repeat: no-repeat; background-attachment: fixed; background-blend-mode: soft-light;
+  background-color: lavender;
+}
+
+p
+{
+background-color: palegreen; color: dodgerblue;
+font-family: arial; 22pt;
+}
+
+p.alt
+{
+background-color: lightpink; color: black;
+font-family: garamond; 22pt;
+}
+
+a
+{
+  background-color: darkseagreen;
+  color: mintcream;
+}
+
+a:hover
+{
+  background-color: lavenderblush;
+  color: darkseagreen;
+}

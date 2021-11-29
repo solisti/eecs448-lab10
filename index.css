@@ -1,0 +1,17 @@
+body
+{
+  background-image: url(https://i.imgur.com/2e22Nsq.jpg); background-size: auto;
+  background-repeat: no-repeat; background-attachment: fixed; background-blend-mode: soft-light;
+  color: white;
+}
+
+/* body
+{
+  background-size: auto;
+  background-repeat: no-repeat; background-attachment: fixed; background-blend-mode: soft-light;
+} */
+
+a
+{
+  color: white
+}

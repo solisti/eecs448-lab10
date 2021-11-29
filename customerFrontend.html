@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript" src="formChecker.js">
+    </script>
+
+    <link href="style.css"
+        rel="stylesheet"
+        type="text/css"/>
+
+  </head>
+
+  <body>
+    <h1>Exercise 3</h1>
+    <h2>Welcome to my web store!</h2>
+
+    <form action="customerBackend.php" onsubmit="return validateForm(event)" method="post">
+      <h4>Enter your user info:</h4>
+      <label for ="Username">Username:</label><br>
+      <input type="text" id="user" name="Username" > <br>
+
+      <label for ="Password">Password:</label><br>
+      <input type="text" id="pass" name="Password" > <br>
+
+      <h4>What would you like to buy? </h4>
+      Enter the number of items. <br>
+      <label for="item1"> Potato ($425)</label><br>
+      <input type="text" id="item1" name="item1" ><br>
+      <label for="item2"> Tomato ($128)</label><br>
+      <input type="text" id="item2" name="item2" ><br>
+      <label for="item3"> Penguin ($399)</label><br>
+      <input type="text" id="item3" name="item3" ><br>
+
+
+      <h4>Shipping options:</h4>
+      <div class="radios">
+        <input type="radio" id="5a" name="ship" value="0">
+        <label for="Free 7 day">Free 7 day</label><br>
+        <input type="radio" id="5b" name="ship" value="50">
+        <label for="$50.00 over night">$50.00 over night</label><br>
+        <input type="radio" id="5c" name="ship" value="5">
+        <label for=" $5.00 three day"> $5.00 three day</label><br>
+      </div>
+
+
+      <input type="reset" value="Reset Form">
+      <input type="submit" value="Submit Form">
+    </form>
+
+  </body>
+</html>
