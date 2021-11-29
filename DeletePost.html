@@ -10,7 +10,7 @@
   </head>
   <body>
 
-    <h2>Delete Posts</h2> <br><br>
+    <h2>Delete Posts</h2>
 
     <form action="DeletePost.php" method="post">
       <table>
@@ -28,14 +28,15 @@
               exit();
           }
 
-          $posts = "SELECT post_id, content, author_id FROM Posts";
+          $posts = "SELECT * FROM Posts";
           $result = $mysqli->query($posts);
 
           while ( $row = $result->fetch_assoc()) {
             echo "<tr>";
             echo "<td>" . $row["content"] . "</td>";
             echo "<td>" . $row["author_id"] . "</td>";
-            echo "<td><input type="checkbox" name="'.$row["post_id"].'"></td>";
+            <!-- echo "<td><input type="checkbox" name="'.$row["post_id"].'"></td>"; -->
+            echo "<td> <input type="checkbox" name="" value=""> </input></td>";
             echo "</tr>";
           }
 
