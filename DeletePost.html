@@ -3,13 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-
     <link href="style.css"
         rel="stylesheet"
         type="text/css"/>
   </head>
   <body>
-
     <h2>Delete Posts</h2>
 
     <form action="DeletePost.php" method="post">
@@ -28,17 +26,17 @@
               exit();
           }
 
-          $posts = "SELECT * FROM Posts";
-          $result = $mysqli->query($posts);
+          $entries = "SELECT * FROM Posts";
+          $result = $mysqli->query($entries);
 
-          while ( $row = $result->fetch_assoc()) {
+          while ($row = $result->fetch_assoc()) {
             echo "<tr>";
             echo "<td>" . $row["content"] . "</td>";
             echo "<td>" . $row["author_id"] . "</td>";
-            <!-- echo "<td><input type="checkbox" name="'.$row["post_id"].'"></td>"; -->
-            echo "<td> <input type="checkbox" name="" value=""> </input></td>";
+            echo '<td><input type="checkbox" name="'.$row["post_id"].'" /></td>';
             echo "</tr>";
           }
+
 
 
           $mysqli -> close();
